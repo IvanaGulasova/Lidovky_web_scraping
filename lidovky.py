@@ -31,8 +31,9 @@ def vsetky_sekcie(soup):
 
     zoznam_sekcii = []
 
-    for sekcia in nazvy_sekcii:
+    for poradie, sekcia in enumerate(nazvy_sekcii, 1):
         vysledok_sekcii = {
+            "Poradie" : poradie,
             "Sekcia": sekcia
         }
         zoznam_sekcii.append(vysledok_sekcii)
